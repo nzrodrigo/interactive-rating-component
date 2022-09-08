@@ -1,13 +1,75 @@
-body {
-  margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap');
+
+:root{
+  --Orange: hsl(25, 97%, 53%);
+  --White: hsl(0, 0%, 100%);
+  --Light-grey: hsl(217, 12%, 63%);
+  --Medium-grey: hsl(216, 12%, 54%);
+  --Dark-blue: hsl(213, 19%, 18%);
+  --Very-dark-blue: hsl(216, 12%, 8%);
 }
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+#important-body {
+  font-family: 'Overpass', sans-serif;
+  background-color: var(--Very-dark-blue);
+  font-size: 15px;
+}
+
+body {
+  margin: 0;
+  
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ 
+  
+  margin: 0 20px;
+  height: calc(100vh - 0.1px);
+}
+
+.wrapper {
+   background-color: var(--Dark-blue);
+   padding: 20px;
+   border-radius: 20px;
+   width: 350px;
+}
+
+.btn-submit {
+  background-color: var(--Orange);
+  border-radius: 20px;
+  border-style: none;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 6px;
+  transition: all 0.2s ease-in-out;
+  color: var(--White);
+  text-transform: uppercase;
+}
+.btn-submit:hover{
+  background-color: var(--White);
+  color: var(--Orange);
+}
+
+.btn-rating {
+  border-radius: 100%;
+  background-color: #343F4F ;
+  border-style: none;
+  color: var(--White);
+  height: 35px;
+  width: 35px;
+  padding-top: 6px;
+}
+
+.btn-rating:hover{
+  background-color: var(--Orange);
+}
+.btn-rating:focus{
+  background-color: var(--Medium-grey) ;
+}
+
+.p-rating{
+  color: var(--Orange);
+  background-color: #343F4F;
+  border-radius: 20px;
+  padding: 4px 20px 0 20px;
 }
